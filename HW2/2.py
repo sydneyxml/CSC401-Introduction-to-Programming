@@ -29,10 +29,6 @@ print(math.ceil(10*sum(wall_widths) / 250))
 
 #Problem C
 
-# 也可以改成 x = eval(input("Enter x:"))
-
-# y = eval(input("Enter y:"))
-
 x = float(input("Enter x:"))
 
 y = float(input("Enter y:"))
