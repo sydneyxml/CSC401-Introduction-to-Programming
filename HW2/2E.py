@@ -1,6 +1,4 @@
 
-# 创建函数 function
-
 #Problem E
 
 def average(some_scores):
