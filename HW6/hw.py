@@ -14,7 +14,7 @@ def timer(n):
         print("Timer Done")
 
     else:
-        print(n, "<1 sec pause>")   # 不用加 <1 sec pause>
+        print(n, "<1 sec pause>")
         time.sleep(1)
         timer(n-1)
 
@@ -27,8 +27,8 @@ def find_file(path, file):
         for filename in my_list:
             if filename == file:
                 print(os.path.join(path, filename))
-            if os.path.isdir(filename):   # 这行的filename应为os.path.join(path, filename)
-                find_file(filename, file)   # 这行的filename应为os.path.join(path, filename)
+            if os.path.isdir(filename):
+                find_file(filename, file)
     except PermissionError:
         pass
                 
@@ -47,6 +47,6 @@ def game(money, result=''):
 
             return game(remaining_count, result)
 
-    return result[:-1]  # 除去空格
+    return result[:-1]
 
 
